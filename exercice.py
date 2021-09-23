@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from matplotlib.colors import cnames
 
 
 def list_to_dict(some_list: list) -> dict:
     # TODO: Transformer la liste en dictionnaire, les éléments de la liste deviennent les clés et leur index deviennent les valeurs
-
-    return {}
+    number=0
+    for i in some_list:
+        number+=1
+        dictionary = {some_list[i] : (number)}
+    i <= len(some_list)
+    return {dictionary}
 
 
 def color_name_to_hex(colors: list) -> list:
