@@ -5,24 +5,26 @@
 
 def list_to_dict(some_list: list) -> dict:
     # TODO: Transformer la liste en dictionnaire, les éléments de la liste deviennent les clés et leur index deviennent les valeurs
-    number=0
-    for i in some_list:
-        number+=1
-        dictionary = {some_list[i] : (number)}
-    i <= len(some_list)
-    return {dictionary}
+    pass
 
 
 def color_name_to_hex(colors: list) -> list:
     # TODO: Trouver la valeur hex de chaque couleur dans la liste et créer une liste de tupple où le premier élément est le nom de la couleur et le deuxième est la valeur hex
 
-    return []
-
+    pass
+('Hex doesnt exist in python, besoin de passer ')
 
 def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
 
-    return []
+    other_list = []
+    for el in range(0, 10000):
+        if el in range(15, 351):
+           continue
+        else:
+           other_list.append(el)
+
+    return [other_list]
 
 
 def compute_mse(model_dict: dict) -> dict:

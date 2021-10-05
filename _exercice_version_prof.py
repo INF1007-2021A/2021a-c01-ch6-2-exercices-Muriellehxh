@@ -22,6 +22,7 @@ def list_to_dict(some_list: list) -> dict:
 def color_name_to_hex(colors: list) -> list:
     # TODO: Trouver la valeur hex de chaque couleur dans la liste et créer une liste de tupple où le premier élément est le nom de la couleur et le deuxième est la valeur hex
     my_list = []
+    print(cnames)
     for c in colors:
         my_list.append((c, cnames[c]))
 
