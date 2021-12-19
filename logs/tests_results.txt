@@ -1,7 +1,7 @@
 test_color_name_to_hex (__main__.TestExercice) ... FAIL
-test_compute_mse (__main__.TestExercice) ... FAIL
+test_compute_mse (__main__.TestExercice) ... ok
 test_create_list (__main__.TestExercice) ... ERROR
-test_list_to_dict (__main__.TestExercice) ... FAIL
+test_list_to_dict (__main__.TestExercice) ... ok
 
 ======================================================================
 ERROR: test_create_list (__main__.TestExercice)
@@ -1984,13 +1984,13 @@ FAIL: test_color_name_to_hex (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 36, in test_color_name_to_hex
     self.assertEqual(
-AssertionError: Lists differ: [None, None] != [[('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A')]]
+AssertionError: Lists differ: [[], []] != [[('blue', '#0000FF'), ('red', '#FF0000'), [172 chars]A')]]
 
 First differing element 0:
-None
-[('blue', '#0000FF'), ('red', '#FF0000'),[84 chars]FF')]
+[]
+[('blue', '#0000FF'), ('red', '#FF0000'), [83 chars]FF')]
 
-- [None, None]
+- [[], []]
 + [[('blue', '#0000FF'),
 +   ('red', '#FF0000'),
 +   ('green', '#008000'),
@@ -2002,33 +2002,7 @@ None
 +   ('red', '#FF0000'),
 +   ('brown', '#A52A2A')]] : Mauvaise reponse
 
-======================================================================
-FAIL: test_compute_mse (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 62, in test_compute_mse
-    self.assertDictEqual(
-AssertionError: {} != {'LR': 220.6, 'DNN': 14.0, 'RF': 1681.8}
-- {}
-+ {'DNN': 14.0, 'LR': 220.6, 'RF': 1681.8} : Erreur dans le calcul des MSE
+Ran 4 tests in 152.869s
 
-======================================================================
-FAIL: test_list_to_dict (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 22, in test_list_to_dict
-    self.assertListEqual(
-AssertionError: Lists differ: [None, None] != [{'a': 0, 'b': 1, 'z': 2, 'patate': 3}, {'[34 chars]: 3}]
-
-First differing element 0:
-None
-{'a': 0, 'b': 1, 'z': 2, 'patate': 3}
-
-- [None, None]
-+ [{'a': 0, 'b': 1, 'patate': 3, 'z': 2},
-+  {'2': 1, 'a': 0, 'hello': 2, 'tigre': 3}] : Mauvaise reponse
-
-----------------------------------------------------------------------
-Ran 4 tests in 130.175s
-
-FAILED (failures=3, errors=1)
+FAILED (failures=1, errors=1)
